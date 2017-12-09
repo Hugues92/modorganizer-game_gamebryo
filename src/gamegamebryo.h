@@ -42,6 +42,7 @@ public: // IPluginGame interface
   //getName
   //initializeProfile
   //savegameExtension
+  //savegameSEExtension
   virtual bool isInstalled() const override;
   virtual QIcon gameIcon() const override;
   virtual QDir gameDirectory() const override;
@@ -58,6 +59,7 @@ public: // IPluginGame interface
   //gameShortName
   //iniFiles
   //DLCPlugins
+  virtual QStringList CCPlugins() const override;
   virtual LoadOrderMechanism loadOrderMechanism() const override;
   //nexusModOrganizerID
   //nexusGameID
